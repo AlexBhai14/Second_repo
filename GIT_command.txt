@@ -1,0 +1,426 @@
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 ~
+$ cd D:/Sahil_Code/GIT_Upload
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (main)
+$ git init
+Initialized empty Git repository in D:/Sahil_Code/GIT_Upload/.git/
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git config user.name
+SahilKushwaha-92
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git config user.email
+sahilkushwaha9224@gmail.com
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "initial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add Test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "initial commit"
+[master (root-commit) e19003a] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add Test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "initial commit"
+[master c8d96c1] initial commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add Test2.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "initial commit of test2 file"
+[master c4060c6] initial commit of test2 file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Test2.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git diff Test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add Test.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git diff Test.txt
+diff --git a/Test.txt b/Test.txt
+index b534bfe..93903d5 100644
+--- a/Test.txt
++++ b/Test.txt
+@@ -1,4 +1,6 @@
+ Hello
+ World
+ Good
+-morning
+\ No newline at end of file
++morning
++Alex
++Bhai
+\ No newline at end of file
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git diff --cached
+diff --git a/Test.txt b/Test.txt
+index ed81d07..b534bfe 100644
+--- a/Test.txt
++++ b/Test.txt
+@@ -1,2 +1,4 @@
+ Hello
+-World
+\ No newline at end of file
++World
++Good
++morning
+\ No newline at end of file
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git mv Test2.txt File.Txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git branch Feature1
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git checkout Feature1
+A       File.Txt
+M       Test.txt
+D       Test2.txt
+Switched to branch 'Feature1'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git status
+On branch Feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Test2.txt -> File.Txt
+        modified:   Test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git checkout master
+A       File.Txt
+M       Test.txt
+D       Test2.txt
+Switched to branch 'master'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Test2.txt -> File.Txt
+        modified:   Test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add .
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "Clear master tree"
+[master 75602c5] Clear master tree
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ rename Test2.txt => File.Txt (100%)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git checkout Feature1
+Switched to branch 'Feature1'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git status
+On branch Feature1
+nothing to commit, working tree clean
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git add .
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git commit -m "Update in test file"
+[Feature1 877ef2a] Update in test file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git checkout master
+Switched to branch 'master'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add .
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "Update in master test file"
+[master 7143aa6] Update in master test file
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git checkout Feature1
+Switched to branch 'Feature1'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git status
+On branch Feature1
+nothing to commit, working tree clean
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git status
+On branch Feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git add .
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git commit -m "Update in feature1 test file"
+[Feature1 88207e5] Update in feature1 test file
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (Feature1)
+$ git checkout master
+Switched to branch 'master'
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git merge Feature1
+Auto-merging Test.txt
+CONFLICT (content): Merge conflict in Test.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master|MERGING)
+$ git add .
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "after marge feature1 test file commit"
+On branch master
+nothing to commit, working tree clean
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git log --all
+commit e2987ed1468bccfe66e1a8e7a915e2584520eb1f (HEAD -> master)
+Merge: 7143aa6 88207e5
+Author: SahilKushwaha-92 <sahilkushwaha9224@gmail.com>
+Date:   Thu Dec 4 12:56:38 2025 +0530
+
+    after marge feature1 test file commit
+
+commit 88207e5127aff1a885d47f3da31b4bdde9652e45 (Feature1)
+Author: SahilKushwaha-92 <sahilkushwaha9224@gmail.com>
+Date:   Thu Dec 4 12:53:08 2025 +0530
+
+    Update in feature1 test file
+
+commit 7143aa66f43c0574ea291f4d3731353501eb4fee
+Author: SahilKushwaha-92 <sahilkushwaha9224@gmail.com>
+Date:   Thu Dec 4 12:51:52 2025 +0530
+
+    Update in master test file
+
+commit 877ef2a7917ed283d035ffd6c0933e08208e2728
+Author: SahilKushwaha-92 <sahilkushwaha9224@gmail.com>
+Date:   Thu Dec 4 12:47:57 2025 +0530
+
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ ssh-keygen -t ed25519 -C "alexbhai1400@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Sahil Kushwaha/.ssh/id_ed25519):
+Created directory '/c/Users/Sahil Kushwaha/.ssh'.
+Enter passphrase for "/c/Users/Sahil Kushwaha/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Sahil Kushwaha/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Sahil Kushwaha/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:NddqVAE8BnUf26roVAvzp78jNbvAFZWuG7YtwRUc6x8 alexbhai1400@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|          .+o.=++|
+|            ++ *=|
+|          o.o.+o+|
+|         . + ..= |
+|        S o = =E |
+|           O Xo o|
+|          o B.Bo.|
+|         o  .Bo. |
+|          . .o=+ |
++----[SHA256]-----+
+
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git remote add origin2 git@github.com:AlexBhai14/Second_repo.git
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git push -u origin2 master
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (24/24), 2.02 KiB | 295.00 KiB/s, done.
+Total 24 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:AlexBhai14/Second_repo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin2/master'.
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin2/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git add .
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git commit -m "Again Push"
+[master 37adc93] Again Push
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test2.txt
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git pull origin2 master --rebase
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 2.61 KiB | 59.00 KiB/s, done.
+From github.com:AlexBhai14/Second_repo
+ * branch            master     -> FETCH_HEAD
+   e2987ed..7593a07  master     -> origin2/master
+Successfully rebased and updated refs/heads/master.
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$ git push origin2 master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 381 bytes | 381.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:AlexBhai14/Second_repo.git
+   7593a07..4ad8e7e  master -> master
+
+Sahil Kushwaha@DESKTOP-6TAS0R4 MINGW64 /d/Sahil_Code/GIT_Upload (master)
+$
